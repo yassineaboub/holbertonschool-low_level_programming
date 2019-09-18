@@ -2,9 +2,8 @@
 
 /**
  * main - Entry point
- *
  * Return: Always 0 (Success)
- * cd: hello
+ * edit
  */
 
 int main(void)
