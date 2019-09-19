@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
-* main - Assign random number to variable n
+* main - Print message 
 *
 * Description: Prints various messages depending on the generated number
 * Return: Always 0
