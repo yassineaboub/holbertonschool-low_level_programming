@@ -6,13 +6,10 @@
 */
 int main(void)
 {
-int c;
+int i;
 
-for (c = 'a'; c <= 'z'; c++)
-if (c != 'q' && c != 'e'
-putchar(c);
-putchar('\n');
-
+for (i = 0 ; i <= 9; i++)
+printf("%d", i);
+printf("\n");
 return (0);
 }
-© 2019 GitHub, Inc.
