@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
-x* main - 102
-* iheb iheb
+* main - 102
+* yassine
 * Return: Always 0 (Success)
 */
 int main(void)
