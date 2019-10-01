@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
-* int _strlen
-*@i:counter
+* _strlen - function
+* @s:counter
 * Return: Always 0.
 */
 int _strlen(char *s)

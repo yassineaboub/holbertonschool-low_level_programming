@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-*reset_to_98
+* reset_to_98 - function
 * @n:pointer
 * always 0
 */
