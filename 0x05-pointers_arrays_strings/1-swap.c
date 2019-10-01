@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* swap_int
+* swap_int - function
 *@a : a pointer
 *@b : b pointer
 *  Always 0.
@@ -10,7 +10,7 @@
 void swap_int(int *a, int *b)
 {
 int i;
-i = a*;
+i = *a;
 *a = *b;
 *b = i;
 }
