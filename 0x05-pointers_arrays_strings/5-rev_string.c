@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* rev_string
+* rev_string - function
 *@s:reverse
 * Always 0.
 */
