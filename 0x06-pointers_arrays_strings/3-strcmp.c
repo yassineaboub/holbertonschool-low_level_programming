@@ -1,10 +1,11 @@
+#include <stdio.h>
 #include "holberton.h"
 
 /**
-*_strcmp - function
-* @s1 : string
-* @s2 : string
-* Return : difference
+* _strcmp - Returns the length
+* @s1: The string
+* @s2 : String
+* Return: The length
 */
 int _strcmp(char *s1, char *s2)
 {
