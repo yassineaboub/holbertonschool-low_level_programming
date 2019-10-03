@@ -9,22 +9,23 @@
 */
 
 char *_strncpy(char *dest, char *src, int n)
-{
-int i, j;
+#include "holberton.h"
+#include <stdio.h>
 
-i = 0;
-j = 0;
-while (i != n)
+/**
+* main - check the code for Holberton School students.
+*
+* Return: Always 0.
+*/
+char *_strncpy(char *dest, char *src, int n)
 {
-dest[j] = src[i];
-if (src[i] == '\0')
+int i;
+while (s[i] != '\0')
+  
 {
-dest[j] = '\0';
-break;
-}
-j++;
 i++;
 }
-while (j != n)
-dest[j++] = '\0';
-return (dest);
+return (i);
+  }
+
+
