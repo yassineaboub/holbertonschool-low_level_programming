@@ -3,7 +3,7 @@
 * *_strpbrk - searches a string
 *@s: pointer
 *@accept: pointer
-*Return: pointer 
+*Return: pointer
 */
 char *_strpbrk(char *s, char *accept)
 {
