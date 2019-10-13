@@ -5,7 +5,7 @@
 * @argv: array that holds the string values
 * Return: 0
 */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 int x = 10;
 if (argc == 1)
