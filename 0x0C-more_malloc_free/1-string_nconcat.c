@@ -23,7 +23,8 @@ for (a = 0; s1[a] != '\0'; a++)
 ;
 ptr = malloc(sizeof(char) * (a + n + 1));
 if (ptr == NULL)
-return (NULL);for (index1 = 0; s1[index1] != '\0'; index1++)
+return (NULL);
+for (index1 = 0; s1[index1] != '\0'; index1++)
 ptr[index1] = s1[index1];
 for (index2 = 0; index2 < n; index2++, index1++)
 ptr[index1] = s2[index2];
