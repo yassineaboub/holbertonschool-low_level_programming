@@ -1,44 +1,39 @@
 #include "holberton.h"
-#include <limits.h>
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
-*alloc_grid - a pointer to 2D array
-*@width:int
-*@height:int
-*Return: (0 Success)
+* alloc_grid - Initializes with 0 a matrix
+* @width: number of columns.
+* @height: number of rows.
+*
+* Return: pointer to the matrix.
 */
-
 int **alloc_grid(int width, int height)
 {
-int **ar;
-int i, j, x, y;
-
+int i, j;
+int **matrix;
 
 if (width <= 0 || height <= 0)
 return (NULL);
-ar = malloc(height * sizeof(int *));
-if (ar == NULL)
+matrix = (int **) malloc(height * sizeof(int *));
+if (matrix == NULL)
+{
+free(matrix);
 return (NULL);
-
+}
 for (i = 0; i < height; i++)
 {
-ar[i] = malloc(width * sizeof(int));
-if (ar[i] == NULL)
+*(matrix + i) = (int *) malloc(width * sizeof(int));
+if (*(matrix + i) == NULL)
 {
-for (x = 0; x < i; x++)
-free(ar[x]);
-
-free(ar);
-
-return (NULL);
+for (j = 0; j < i; j++)
+free(*(matrix + j));
+free(matrix);
 }
 }
 
-for (y = 0; y < height; y++)
-{
+for (i = 0; i < height; i++)
 for (j = 0; j < width; j++)
-ar[y][j] = 0;
-}
-return (ar);
+*(*(matrix + i) + j) = 0;
+return (matrix);
 }
