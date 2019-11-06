@@ -11,6 +11,8 @@ listint_t *newone;
 newone = malloc(sizeof(listint_t));
 if (newone == NULL)
 return (NULL);
-newone->n = *head;
+newone->n = n;
+newone->next = *head;
 *head = newone;
 return (newone);
+}
