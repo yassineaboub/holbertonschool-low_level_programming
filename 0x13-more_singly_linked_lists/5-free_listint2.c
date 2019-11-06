@@ -11,8 +11,8 @@ return;
 k = *head;
 while (k != NULL)
 {
-k = k->next;
 free(k);
+k = k->next;
 }
 *head = NULL;
 }
