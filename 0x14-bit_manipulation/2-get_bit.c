@@ -2,7 +2,7 @@
 /**
 * get_bit - function returns the value of bit in index
 * @n: num which converted
-* @index: check bits place 
+* @index: check bits place
 * Return: int
 **/
 int get_bit(unsigned long int n, unsigned int index)
