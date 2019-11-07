@@ -1,0 +1,19 @@
+#include "holberton.h"
+
+/**
+* print_binary - prints the binary representation of a number
+* @n: the number to be scanned
+* Return: void
+*/
+void print_binary(unsigned long int n)
+{
+int i = 0;
+unsigned long int n;
+while ((n >>= 1) > 0)
+i++;
+while (i >= 0)
+{
+_putchar((n >> i) & 1 ? '1' : '0');
+i--;
+}
+}
